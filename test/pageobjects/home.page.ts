@@ -1,25 +1,3 @@
-import { $ } from '@wdio/globals'
-import Page from './page';
-
-/**
- * sub page containing specific selectors and methods for a specific page
- */
-class HomePage extends Page {
-    /**
-     * define selectors using getter methods
-     */
-    public get heroCard () {
-        return $('//a[@data-id="hero-card"]');
-    }
-
-    public get articlesInHero () {
-        let num = Math.floor(Math.random()*4);
-        return $(`//a[@data-id='hero-card'][@data-position='${num}']`)
-    }
-
-    public open () {
-        return super.open('');
-    }
-}
-
-export default new HomePage();
+version https://git-lfs.github.com/spec/v1
+oid sha256:9d388733fcb601a5f0d23d52a830658d3fbdfb61b32ceee0eb5e0f888cbbec50
+size 671
